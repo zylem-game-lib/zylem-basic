@@ -3,17 +3,16 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-	  "dev": "vite",
-	  "build": "tsc && vite build",
-	  "preview": "vite preview",
-	  "start": "npx http-server ./dist"
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"start": "npx http-server ./dist"
 	},
 	"dependencies": {
-		"@tcool86/zylem": "^0.1.15"
+		"@tcool86/zylem": "^0.1.27"
 	},
 	"devDependencies": {
-	  "typescript": "^5.2.2",
-	  "vite": "^5.3.1"
+		"typescript": "^5.2.2",
+		"vite": "^5.3.1"
 	}
-  }
-  
+}
