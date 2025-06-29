@@ -9,10 +9,10 @@
 		"start": "npx http-server ./dist"
 	},
 	"dependencies": {
-		"@tcool86/zylem": "^0.2.1"
+		"@tcool86/zylem": "^0.3.3"
 	},
 	"devDependencies": {
-		"typescript": "^5.2.2",
-		"vite": "^5.3.1"
+		"typescript": "^5.8.3",
+		"vite": "^5.4.19"
 	}
 }
