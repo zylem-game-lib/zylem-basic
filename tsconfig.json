@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
-		"target": "ESNext",
-		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"target": "ES2022",
+		"lib": ["DOM", "DOM.Iterable", "ES2022"],
 		"types": ["vite/client"],
 		"allowJs": false,
 		"skipLibCheck": true,
@@ -17,7 +17,7 @@
 		"jsx": "preserve",
 		"baseUrl": "./",
 		"paths": {
-			"~/*": ["src/*"],
+			"~/*": ["src/*"]
 		}
 	},
 	"include": ["./src"],
