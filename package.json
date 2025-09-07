@@ -9,7 +9,7 @@
 		"start": "npx http-server ./dist"
 	},
 	"dependencies": {
-		"@tcool86/zylem": "^0.3.3"
+		"@zylem/game-lib": "0.3.16"
 	},
 	"devDependencies": {
 		"typescript": "^5.8.3",

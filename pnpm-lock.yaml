@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@tcool86/zylem':
-        specifier: ^0.3.3
-        version: 0.3.3(react@18.3.1)(typescript@5.8.3)
+      '@zylem/game-lib':
+        specifier: 0.3.16
+        version: 0.3.16(@dimforge/rapier3d-compat@0.11.2)(bitecs@0.3.40)(howler@2.2.4)(nanoid@5.1.5)(three@0.180.0)(typescript@5.8.3)(valtio@2.1.7(react@18.3.1))
     devDependencies:
       typescript:
         specifier: ^5.8.3
@@ -203,8 +203,8 @@ packages:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
 
-  '@kobalte/core@0.13.10':
-    resolution: {integrity: sha512-lzP64ThxZqZB6O6MnMq6w7DxK38o2ClbW3Ob6afUI6p86cUMz5Hb4rdysvYI6m1TKYlOAlFODKkoRznqybQohw==}
+  '@kobalte/core@0.13.11':
+    resolution: {integrity: sha512-hK7TYpdib/XDb/r/4XDBFaO9O+3ZHz4ZWryV4/3BfES+tSQVgg2IJupDnztKXB0BqbSRy/aWlHKw1SPtNPYCFQ==}
     peerDependencies:
       solid-js: ^1.8.15
 
@@ -317,10 +317,6 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@simplyianm/legend-state@1.6.2':
-    resolution: {integrity: sha512-jnL5UTKdJ34J97FcUeQFCQPxKYoGxhTPr04WAtOoABL5A8A37UVmhYF1atumCpNlo39AJXq+nXj/MDdS0qI4dg==}
-    engines: {node: '>=16.6.0', npm: '>=8.11.0'}
-
   '@solid-primitives/event-listener@2.4.1':
     resolution: {integrity: sha512-Xc/lBCeuh9LwzR4lYbMDtopwWK7N9b4o+FmI4uoI8DOtVGYi0Ip20DG8PtwHk+g31lHgvwtFFVKfnUx2UaqZJg==}
     peerDependencies:
@@ -379,9 +375,6 @@ packages:
   '@swc/helpers@0.5.17':
     resolution: {integrity: sha512-5IKx/Y13RsYd+sauPb2x+U/xZikHjolzfuDgTAl/Tdf3Q8rslRvC19NKDLgAJQ6wsqADk10ntlv08nPFw/gO/A==}
 
-  '@tcool86/zylem@0.3.3':
-    resolution: {integrity: sha512-+Rz2l7G9qOwqPZRRZGcHCNulw3ogTEbStFePJ7HYAIGLUzxME0zM3WG7kMtwuEMn4xigNCy3OkXAYOHuBVRjyA==}
-
   '@types/dat.gui@0.7.13':
     resolution: {integrity: sha512-LmG4Pr0mbsB/1WVttf8xaHx45BvSBDGY5D9+0/9AZCbI4vvOguwBHZdKyJMxt5Yst8+icRSHKmr7ClV2u5ZtDA==}
 
@@ -390,6 +383,20 @@ packages:
 
   '@types/howler@2.2.12':
     resolution: {integrity: sha512-hy769UICzOSdK0Kn1FBk4gN+lswcj1EKRkmiDtMkUGvFfYJzgaDXmVXkSShS2m89ERAatGIPnTUlp2HhfkVo5g==}
+
+  '@zylem/assets@0.1.1':
+    resolution: {integrity: sha512-ALiD4ritqUpH+RQzqPG0YdwTYyWz6/gUXxdQ5XDMqSiOmvKIsU7bVhDh7svRnOaIWtBxV3SrcyLp6uMQwcaEqA==}
+
+  '@zylem/game-lib@0.3.16':
+    resolution: {integrity: sha512-sDmkfWc7sHy3FBn7hcTitrtXPkpj0rvf9DIrhgMU5rYeKWWTD2gmUjd0gdxdHMKGtnxlPF0oYgEgsEwofUYARA==}
+    engines: {node: '>=22.12.0', npm: '>=10.0.0', pnpm: '>=10.14.0'}
+    peerDependencies:
+      '@dimforge/rapier3d-compat': ^0.11.2
+      bitecs: ^0.3.40
+      howler: ^2.2.4
+      nanoid: ^5.1.5
+      three: ^0.180.0
+      valtio: ^2.1.7
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -441,6 +448,9 @@ packages:
 
   emoji-regex@9.2.2:
     resolution: {integrity: sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==}
+
+  es-toolkit@1.39.10:
+    resolution: {integrity: sha512-E0iGnTtbDhkeczB0T+mxmoVlT4YNweEKBLq7oaU4p11mecdsZpNWOglI4895Vh4usbQ+LsJiuLuI2L0Vdmfm2w==}
 
   esbuild@0.21.5:
     resolution: {integrity: sha512-mg3OPMV4hXywwpoDxu3Qda5xCKQi+vCTZq8S9J/EpkhB2HzKXq4SNFZE3+NK93JYxc8VMSep+lOUSC/RVKaBqw==}
@@ -541,6 +551,11 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  nanoid@5.1.5:
+    resolution: {integrity: sha512-Ir/+ZpE9fDsNH0hQ3C68uyThDXzYcim2EqcZ8zn8Chtt1iylPT9xXJB0kPCnqzgcEGikO9RxSrh63MsmVCU7Fw==}
+    engines: {node: ^18 || >=20}
+    hasBin: true
+
   package-json-from-dist@1.0.1:
     resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
 
@@ -569,6 +584,9 @@ packages:
   postcss@8.5.6:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
+
+  proxy-compare@3.0.1:
+    resolution: {integrity: sha512-V9plBAt3qjMlS1+nC8771KNf6oJ12gExvaxnNzN/9yVRLdTv/lc+oJlnSzrdYDAvBfTStPCoiaCOTmTs0adv7Q==}
 
   react@18.3.1:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
@@ -622,8 +640,8 @@ packages:
   socket-post-message@1.0.3:
     resolution: {integrity: sha512-UhJaB3xR2oF+HvddFOq2cBZi4zVKOHvdiBo+BaScNxsEUg3TLWSP8BkweKfe07kfH1thjn1hJR0af/w1EtBFjg==}
 
-  solid-js@1.9.0:
-    resolution: {integrity: sha512-MDRx9+mtTBYfaY+Xy+F+GI57U04uYXj/I7jWQISzDUTvDXKOiPltOzoCSLXn0vk5mhs/OPZlG0UoWBaKPvlWBQ==}
+  solid-js@1.9.9:
+    resolution: {integrity: sha512-A0ZBPJQldAeGCTW0YRYJmt7RCeh5rbFfPZ2aOttgYnctHE7HgKeHCBB/PVc2P7eOfmNXqMFFFoYYdm3S4dcbkA==}
 
   solid-presence@0.1.8:
     resolution: {integrity: sha512-pWGtXUFWYYUZNbg5YpG5vkQJyOtzn2KXhxYaMx/4I+lylTLYkITOLevaCwMRN+liCVk0pqB6EayLWojNqBFECA==}
@@ -679,8 +697,8 @@ packages:
     peerDependencies:
       three: '>=0.86.0'
 
-  three@0.172.0:
-    resolution: {integrity: sha512-6HMgMlzU97MsV7D/tY8Va38b83kz8YJX+BefKjspMNAv0Vx6dxMogHOrnRl/sbMIs3BPUKijPqDqJ/+UwJbIow==}
+  three@0.180.0:
+    resolution: {integrity: sha512-o+qycAMZrh+TsE01GqWUxUIKR1AL0S8pq7zDkYOQw8GqfX8b8VoCKYUoHbhiX5j+7hr8XsuHDVU6+gkQJQKg9w==}
 
   three@0.92.0:
     resolution: {integrity: sha512-yQzuwMDEyxc+TFHn8c+LtpK1Sqpy8I3FAr+1EoqqLmNmv6hjfFqB8PlYztRLuM4FMFb4hIbpUoP7Gc9bPQvkCg==}
@@ -705,14 +723,17 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  use-sync-external-store@1.5.0:
-    resolution: {integrity: sha512-Rb46I4cGGVBmjamjphe8L/UnvJD+uPPtTkNvX5mZgqdbavhI4EbgIWJiIHXJ8bc/i9EQGPRh4DwEURJ552Do0A==}
+  valtio@2.1.7:
+    resolution: {integrity: sha512-DwJhCDpujuQuKdJ2H84VbTjEJJteaSmqsuUltsfbfdbotVfNeTE4K/qc/Wi57I9x8/2ed4JNdjEna7O6PfavRg==}
+    engines: {node: '>=12.20.0'}
     peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-
-  uuid@11.1.0:
-    resolution: {integrity: sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==}
-    hasBin: true
+      '@types/react': '>=18.0.0'
+      react: '>=18.0.0'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      react:
+        optional: true
 
   vite@5.4.19:
     resolution: {integrity: sha512-qO3aKv3HoQC8QKiNSTuUM1l9o/XX3+c+VTgLHbJWHZGeTPVAg2XwazI9UWzoxjIJCGCV2zU60uqMzjeLZuULqA==}
@@ -764,10 +785,10 @@ packages:
 
 snapshots:
 
-  '@corvu/utils@0.4.2(solid-js@1.9.0)':
+  '@corvu/utils@0.4.2(solid-js@1.9.9)':
     dependencies:
       '@floating-ui/dom': 1.7.2
-      solid-js: 1.9.0
+      solid-js: 1.9.9
 
   '@dimforge/rapier3d-compat@0.11.2': {}
 
@@ -882,28 +903,28 @@ snapshots:
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
 
-  '@kobalte/core@0.13.10(solid-js@1.9.0)':
+  '@kobalte/core@0.13.11(solid-js@1.9.9)':
     dependencies:
       '@floating-ui/dom': 1.7.2
       '@internationalized/date': 3.8.2
       '@internationalized/number': 3.6.3
-      '@kobalte/utils': 0.9.1(solid-js@1.9.0)
-      '@solid-primitives/props': 3.2.1(solid-js@1.9.0)
-      '@solid-primitives/resize-observer': 2.1.1(solid-js@1.9.0)
-      solid-js: 1.9.0
-      solid-presence: 0.1.8(solid-js@1.9.0)
-      solid-prevent-scroll: 0.1.10(solid-js@1.9.0)
+      '@kobalte/utils': 0.9.1(solid-js@1.9.9)
+      '@solid-primitives/props': 3.2.1(solid-js@1.9.9)
+      '@solid-primitives/resize-observer': 2.1.1(solid-js@1.9.9)
+      solid-js: 1.9.9
+      solid-presence: 0.1.8(solid-js@1.9.9)
+      solid-prevent-scroll: 0.1.10(solid-js@1.9.9)
 
-  '@kobalte/utils@0.9.1(solid-js@1.9.0)':
+  '@kobalte/utils@0.9.1(solid-js@1.9.9)':
     dependencies:
-      '@solid-primitives/event-listener': 2.4.1(solid-js@1.9.0)
-      '@solid-primitives/keyed': 1.5.1(solid-js@1.9.0)
-      '@solid-primitives/map': 0.4.13(solid-js@1.9.0)
-      '@solid-primitives/media': 2.3.1(solid-js@1.9.0)
-      '@solid-primitives/props': 3.2.1(solid-js@1.9.0)
-      '@solid-primitives/refs': 1.1.1(solid-js@1.9.0)
-      '@solid-primitives/utils': 6.3.1(solid-js@1.9.0)
-      solid-js: 1.9.0
+      '@solid-primitives/event-listener': 2.4.1(solid-js@1.9.9)
+      '@solid-primitives/keyed': 1.5.1(solid-js@1.9.9)
+      '@solid-primitives/map': 0.4.13(solid-js@1.9.9)
+      '@solid-primitives/media': 2.3.1(solid-js@1.9.9)
+      '@solid-primitives/props': 3.2.1(solid-js@1.9.9)
+      '@solid-primitives/refs': 1.1.1(solid-js@1.9.9)
+      '@solid-primitives/utils': 6.3.1(solid-js@1.9.9)
+      solid-js: 1.9.9
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
@@ -968,115 +989,111 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.44.1':
     optional: true
 
-  '@simplyianm/legend-state@1.6.2(react@18.3.1)':
+  '@solid-primitives/event-listener@2.4.1(solid-js@1.9.9)':
     dependencies:
-      use-sync-external-store: 1.5.0(react@18.3.1)
-    transitivePeerDependencies:
-      - react
+      '@solid-primitives/utils': 6.3.1(solid-js@1.9.9)
+      solid-js: 1.9.9
 
-  '@solid-primitives/event-listener@2.4.1(solid-js@1.9.0)':
+  '@solid-primitives/keyed@1.5.1(solid-js@1.9.9)':
     dependencies:
-      '@solid-primitives/utils': 6.3.1(solid-js@1.9.0)
-      solid-js: 1.9.0
+      solid-js: 1.9.9
 
-  '@solid-primitives/keyed@1.5.1(solid-js@1.9.0)':
+  '@solid-primitives/map@0.4.13(solid-js@1.9.9)':
     dependencies:
-      solid-js: 1.9.0
+      '@solid-primitives/trigger': 1.2.1(solid-js@1.9.9)
+      solid-js: 1.9.9
 
-  '@solid-primitives/map@0.4.13(solid-js@1.9.0)':
+  '@solid-primitives/media@2.3.1(solid-js@1.9.9)':
     dependencies:
-      '@solid-primitives/trigger': 1.2.1(solid-js@1.9.0)
-      solid-js: 1.9.0
+      '@solid-primitives/event-listener': 2.4.1(solid-js@1.9.9)
+      '@solid-primitives/rootless': 1.5.1(solid-js@1.9.9)
+      '@solid-primitives/static-store': 0.1.1(solid-js@1.9.9)
+      '@solid-primitives/utils': 6.3.1(solid-js@1.9.9)
+      solid-js: 1.9.9
 
-  '@solid-primitives/media@2.3.1(solid-js@1.9.0)':
+  '@solid-primitives/props@3.2.1(solid-js@1.9.9)':
     dependencies:
-      '@solid-primitives/event-listener': 2.4.1(solid-js@1.9.0)
-      '@solid-primitives/rootless': 1.5.1(solid-js@1.9.0)
-      '@solid-primitives/static-store': 0.1.1(solid-js@1.9.0)
-      '@solid-primitives/utils': 6.3.1(solid-js@1.9.0)
-      solid-js: 1.9.0
+      '@solid-primitives/utils': 6.3.1(solid-js@1.9.9)
+      solid-js: 1.9.9
 
-  '@solid-primitives/props@3.2.1(solid-js@1.9.0)':
+  '@solid-primitives/refs@1.1.1(solid-js@1.9.9)':
     dependencies:
-      '@solid-primitives/utils': 6.3.1(solid-js@1.9.0)
-      solid-js: 1.9.0
+      '@solid-primitives/utils': 6.3.1(solid-js@1.9.9)
+      solid-js: 1.9.9
 
-  '@solid-primitives/refs@1.1.1(solid-js@1.9.0)':
+  '@solid-primitives/resize-observer@2.1.1(solid-js@1.9.9)':
     dependencies:
-      '@solid-primitives/utils': 6.3.1(solid-js@1.9.0)
-      solid-js: 1.9.0
+      '@solid-primitives/event-listener': 2.4.1(solid-js@1.9.9)
+      '@solid-primitives/rootless': 1.5.1(solid-js@1.9.9)
+      '@solid-primitives/static-store': 0.1.1(solid-js@1.9.9)
+      '@solid-primitives/utils': 6.3.1(solid-js@1.9.9)
+      solid-js: 1.9.9
 
-  '@solid-primitives/resize-observer@2.1.1(solid-js@1.9.0)':
+  '@solid-primitives/rootless@1.5.1(solid-js@1.9.9)':
     dependencies:
-      '@solid-primitives/event-listener': 2.4.1(solid-js@1.9.0)
-      '@solid-primitives/rootless': 1.5.1(solid-js@1.9.0)
-      '@solid-primitives/static-store': 0.1.1(solid-js@1.9.0)
-      '@solid-primitives/utils': 6.3.1(solid-js@1.9.0)
-      solid-js: 1.9.0
+      '@solid-primitives/utils': 6.3.1(solid-js@1.9.9)
+      solid-js: 1.9.9
 
-  '@solid-primitives/rootless@1.5.1(solid-js@1.9.0)':
+  '@solid-primitives/static-store@0.1.1(solid-js@1.9.9)':
     dependencies:
-      '@solid-primitives/utils': 6.3.1(solid-js@1.9.0)
-      solid-js: 1.9.0
+      '@solid-primitives/utils': 6.3.1(solid-js@1.9.9)
+      solid-js: 1.9.9
 
-  '@solid-primitives/static-store@0.1.1(solid-js@1.9.0)':
+  '@solid-primitives/trigger@1.2.1(solid-js@1.9.9)':
     dependencies:
-      '@solid-primitives/utils': 6.3.1(solid-js@1.9.0)
-      solid-js: 1.9.0
+      '@solid-primitives/utils': 6.3.1(solid-js@1.9.9)
+      solid-js: 1.9.9
 
-  '@solid-primitives/trigger@1.2.1(solid-js@1.9.0)':
+  '@solid-primitives/utils@6.3.1(solid-js@1.9.9)':
     dependencies:
-      '@solid-primitives/utils': 6.3.1(solid-js@1.9.0)
-      solid-js: 1.9.0
-
-  '@solid-primitives/utils@6.3.1(solid-js@1.9.0)':
-    dependencies:
-      solid-js: 1.9.0
+      solid-js: 1.9.9
 
   '@swc/helpers@0.5.17':
     dependencies:
       tslib: 2.8.1
-
-  '@tcool86/zylem@0.3.3(react@18.3.1)(typescript@5.8.3)':
-    dependencies:
-      '@dimforge/rapier3d': 0.11.2
-      '@dimforge/rapier3d-compat': 0.11.2
-      '@kobalte/core': 0.13.10(solid-js@1.9.0)
-      '@simplyianm/legend-state': 1.6.2(react@18.3.1)
-      '@types/dat.gui': 0.7.13
-      '@types/howler': 2.2.12
-      bitecs: 0.3.40
-      dat.gui: 0.7.9
-      function-bind: 1.1.2
-      has: 1.0.4
-      howler: 2.2.4
-      is-core-module: 2.16.1
-      lil-gui: 0.20.0
-      lucide-solid: 0.511.0(solid-js@1.9.0)
-      nanoid: 3.3.11
-      path-parse: 1.0.7
-      picocolors: 1.1.1
-      resolve: 1.22.10
-      solid-js: 1.9.0
-      source-map-js: 1.2.1
-      stats.js: 0.17.0
-      supports-preserve-symlinks-flag: 1.0.0
-      three: 0.172.0
-      three-addons: 1.2.0
-      three-full: 28.0.2
-      three-instanced-uniforms-mesh: 0.52.4(three@0.172.0)
-      three-spritetext: 1.10.0(three@0.172.0)
-      tsimp: 2.0.12(typescript@5.8.3)
-      uuid: 11.1.0
-    transitivePeerDependencies:
-      - react
-      - typescript
 
   '@types/dat.gui@0.7.13': {}
 
   '@types/estree@1.0.8': {}
 
   '@types/howler@2.2.12': {}
+
+  '@zylem/assets@0.1.1': {}
+
+  '@zylem/game-lib@0.3.16(@dimforge/rapier3d-compat@0.11.2)(bitecs@0.3.40)(howler@2.2.4)(nanoid@5.1.5)(three@0.180.0)(typescript@5.8.3)(valtio@2.1.7(react@18.3.1))':
+    dependencies:
+      '@dimforge/rapier3d': 0.11.2
+      '@dimforge/rapier3d-compat': 0.11.2
+      '@kobalte/core': 0.13.11(solid-js@1.9.9)
+      '@types/dat.gui': 0.7.13
+      '@types/howler': 2.2.12
+      '@zylem/assets': 0.1.1
+      bitecs: 0.3.40
+      dat.gui: 0.7.9
+      es-toolkit: 1.39.10
+      function-bind: 1.1.2
+      has: 1.0.4
+      howler: 2.2.4
+      is-core-module: 2.16.1
+      lil-gui: 0.20.0
+      lucide-solid: 0.511.0(solid-js@1.9.9)
+      nanoid: 5.1.5
+      path-parse: 1.0.7
+      picocolors: 1.1.1
+      resolve: 1.22.10
+      solid-js: 1.9.9
+      source-map-js: 1.2.1
+      stats.js: 0.17.0
+      supports-preserve-symlinks-flag: 1.0.0
+      three: 0.180.0
+      three-addons: 1.2.0
+      three-full: 28.0.2
+      three-instanced-uniforms-mesh: 0.52.4(three@0.180.0)
+      three-spritetext: 1.10.0(three@0.180.0)
+      tsimp: 2.0.12(typescript@5.8.3)
+      valtio: 2.1.7(react@18.3.1)
+    transitivePeerDependencies:
+      - typescript
 
   ansi-regex@5.0.1: {}
 
@@ -1117,6 +1134,8 @@ snapshots:
   emoji-regex@8.0.0: {}
 
   emoji-regex@9.2.2: {}
+
+  es-toolkit@1.39.10: {}
 
   esbuild@0.21.5:
     optionalDependencies:
@@ -1198,21 +1217,23 @@ snapshots:
     dependencies:
       '@isaacs/cliui': 8.0.2
 
-  js-tokens@4.0.0: {}
+  js-tokens@4.0.0:
+    optional: true
 
   lil-gui@0.20.0: {}
 
   loose-envify@1.4.0:
     dependencies:
       js-tokens: 4.0.0
+    optional: true
 
   lru-cache@10.4.3: {}
 
   lru-cache@11.1.0: {}
 
-  lucide-solid@0.511.0(solid-js@1.9.0):
+  lucide-solid@0.511.0(solid-js@1.9.9):
     dependencies:
-      solid-js: 1.9.0
+      solid-js: 1.9.9
 
   minimatch@10.0.3:
     dependencies:
@@ -1227,6 +1248,8 @@ snapshots:
   mkdirp@3.0.1: {}
 
   nanoid@3.3.11: {}
+
+  nanoid@5.1.5: {}
 
   package-json-from-dist@1.0.1: {}
 
@@ -1254,9 +1277,12 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
+  proxy-compare@3.0.1: {}
+
   react@18.3.1:
     dependencies:
       loose-envify: 1.4.0
+    optional: true
 
   resolve@1.22.10:
     dependencies:
@@ -1321,21 +1347,21 @@ snapshots:
 
   socket-post-message@1.0.3: {}
 
-  solid-js@1.9.0:
+  solid-js@1.9.9:
     dependencies:
       csstype: 3.1.3
       seroval: 1.3.2
       seroval-plugins: 1.3.2(seroval@1.3.2)
 
-  solid-presence@0.1.8(solid-js@1.9.0):
+  solid-presence@0.1.8(solid-js@1.9.9):
     dependencies:
-      '@corvu/utils': 0.4.2(solid-js@1.9.0)
-      solid-js: 1.9.0
+      '@corvu/utils': 0.4.2(solid-js@1.9.9)
+      solid-js: 1.9.9
 
-  solid-prevent-scroll@0.1.10(solid-js@1.9.0):
+  solid-prevent-scroll@0.1.10(solid-js@1.9.9):
     dependencies:
-      '@corvu/utils': 0.4.2(solid-js@1.9.0)
-      solid-js: 1.9.0
+      '@corvu/utils': 0.4.2(solid-js@1.9.9)
+      solid-js: 1.9.9
 
   source-map-js@1.2.1: {}
 
@@ -1369,22 +1395,22 @@ snapshots:
 
   three-full@28.0.2: {}
 
-  three-instanced-uniforms-mesh@0.52.4(three@0.172.0):
+  three-instanced-uniforms-mesh@0.52.4(three@0.180.0):
     dependencies:
-      three: 0.172.0
-      troika-three-utils: 0.52.4(three@0.172.0)
+      three: 0.180.0
+      troika-three-utils: 0.52.4(three@0.180.0)
 
-  three-spritetext@1.10.0(three@0.172.0):
+  three-spritetext@1.10.0(three@0.180.0):
     dependencies:
-      three: 0.172.0
+      three: 0.180.0
 
-  three@0.172.0: {}
+  three@0.180.0: {}
 
   three@0.92.0: {}
 
-  troika-three-utils@0.52.4(three@0.172.0):
+  troika-three-utils@0.52.4(three@0.180.0):
     dependencies:
-      three: 0.172.0
+      three: 0.180.0
 
   tsimp@2.0.12(typescript@5.8.3):
     dependencies:
@@ -1403,11 +1429,11 @@ snapshots:
 
   typescript@5.8.3: {}
 
-  use-sync-external-store@1.5.0(react@18.3.1):
+  valtio@2.1.7(react@18.3.1):
     dependencies:
+      proxy-compare: 3.0.1
+    optionalDependencies:
       react: 18.3.1
-
-  uuid@11.1.0: {}
 
   vite@5.4.19:
     dependencies:
